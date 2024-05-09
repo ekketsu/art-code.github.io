@@ -20,7 +20,7 @@ Art Code est un site web conçu pour présenter une sélection d'œuvres d'art c
 
 ## Accès au site
 
-Le site est hébergé et accessible en ligne. Vous pouvez y accéder en suivant ce lien : [Art Code](https://ekketsu.github.io/art-code.github.io/)
+Le site est hébergé et accessible en ligne. Vous pouvez y accéder en suivant ce lien : [Art Code](https://ekketsu.github.io/art-code/)
 
 ## Améliorations futures
 
