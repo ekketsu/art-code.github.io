@@ -1,0 +1,153 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;   
+    padding: 0px; 
+  }
+
+  header {
+    background-image: url('impression-soleil-levant-monet.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+h1{
+        font-family: "Patrick Hand SC", cursive;
+        font-weight: 400;
+        font-size: 75px;
+        font-style: normal;
+        margin: 21px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    padding: 10px;
+    &:hover {
+        background-color:#3d3c3c3c;
+        border-radius: 11px;
+    }
+}
+
+img {
+
+    max-width: 100%;
+
+    height: auto;
+
+}
+
+.landscape-message {
+    display: none;
+    height: 1000%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background-color: black;
+    color: #fff;
+    font-family: "Patrick Hand SC", cursive;
+    font-size: 1.5em;
+}
+
+.tablet-message {
+    display: none;
+    height: 1000%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background-color: black;
+    color: #fff;
+    font-family: "Patrick Hand SC", cursive;
+    font-size: 1.5em;
+}
+
+#why{ 
+    position: absolute;
+    top:40%;
+    font-size: 100px;
+}
+#go{
+    position: absolute;
+    top:90%;
+    font-size: 100px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 750px) {
+
+    .landscape-message {
+
+        display: block;
+
+    }
+
+    img{
+        position: absolute;
+        top: 3%;
+        left: 6.2%;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+
+    .tablet-message {
+
+        display: block;
+
+    }
+
+    img{
+        position: absolute;
+        top: 3%;
+        left: 25%;
+        border-radius: 25px;
+    }
+
+}
+@media screen and (min-width: 1024px) and (max-width: 2180px) {
+
+    h1 {
+  
+      font-size: calc(55px + ((100vw - 1024px) * (90 - 55) / (2180 - 1024))) !important; 
+  
+    }
+
+    a{
+        font-size: calc(10px + ((100vw - 1024px) * (25 - 10) / (2180 - 1024))) !important;
+    }
+    
+    #paragraph-2{
+  
+        font-size: calc(20px + ((100vw - 1024px) * (40 - 20) / (2180 - 1024))) !important;
+    
+      }
+
+      #paragraph-3{
+  
+        font-size: calc(20px + ((100vw - 1024px) * (40 - 20) / (2180 - 1024))) !important;
+    
+      }
+    .big-title{
+
+        font-size: calc(100px + ((100vw - 1024px) * (250 - 100) / (2180 - 1024))) !important;
+
+    }
+    .room{
+
+        top: calc(225px + ((100vw - 1024px) * (255 - 225) / (2180 - 1024))) !important;
+
+    }
+  }

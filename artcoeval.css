@@ -1,0 +1,90 @@
+body{
+    background-image: url('fire-full-moon.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.header-2 {
+    background-image: url('fire-full-moon-invert.jpg');
+    background-position:top;
+    position: relative;
+    z-index: 3;
+}
+
+#art-article{
+    background-image: url('fire-full-moon.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 90%;
+}
+#fixed{
+    height: 45%;
+    z-index: 0;
+}
+.title-2{
+    color: #fff;
+    background-color: #ffffff00;
+}
+#paragraph-2{
+    background-color: #ffffff00;
+}
+.box-invert{
+    height: calc(55% + 75px);
+    top: 615px;
+    z-index: 2;
+}
+.box-invert #fixed {
+    position: fixed;
+    z-index: 2;
+}
+.box-invert .title-2{
+    background-color:#ffffff00;
+    color: #ffffff00;
+    background-clip: text;
+    background-image: url('fire-full-moon.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: fixed;
+    top: 5%;
+    left: 35%;
+}
+.box-invert #paragraph-2{
+    background-color:#ffffff00;
+    color: #ffffff00;
+    background-clip: text;
+    background-image: url('fire-full-moon.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: fixed;
+    top: 29%;
+    text-align:right;
+}
+.main-article{
+    width: 100%;
+    height: calc(55% + 75px);
+    background-image: url('fire-full-moon.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    top: 10%;
+    z-index: 3;
+}
+#main-2{
+    background-image: url('empty-minimal-room-interior-design-black-white-tone.jpg');
+    height: 100%;
+    text-align: center;
+}
+
+.big-title{
+    position: relative;
+    top: 200px;
+}

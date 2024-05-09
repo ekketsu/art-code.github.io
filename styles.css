@@ -1,0 +1,274 @@
+@font-face {
+    font-family: Earth;
+    src:url("JFJUNROC.TTF");
+}
+@font-face {
+    font-family: Mirror;
+    src: url("matrix.ttf");
+}
+.room{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: absolute;
+    display: flex;
+    top:225px;
+    height: 515px;
+    width: 100%;
+   background-image: url('empty-minimal-room-interior-design-black-white-tone.jpg');
+   background-attachment: fixed;
+   background-position:center;
+   background-repeat: no-repeat;
+   background-size:cover;
+}
+.painting{
+    z-index: 1;
+    position: absolute;
+    top:100px;
+    height: 150px;
+    width: 250px;
+    border: 20px solid transparent; 
+    border-image: url("gold-picture-frame-1.png") 20 round;
+    border-image-slice: 100; 
+}
+.painting:hover {
+        transition-timing-function: ease-in;
+        transition-delay: 0s;
+        transition-duration:0.5s;
+        transform: scale(1.7);
+        z-index: 2;
+}
+#art-1{
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    transition-duration:0.5s;
+    left: calc(25% - 145px );
+}
+#art-1:hover ~ #hidden-div-1,
+#art-1:active ~ #hidden-div-1{
+    left: calc(25% - 150px );
+    display: block;
+}
+
+
+#art-2{
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    transition-duration:0.5s;
+    left: calc(50% - 145px );   
+}
+#art-2:hover ~ #hidden-div-2,
+#art-2:active ~ #hidden-div-2{
+    left: calc(50% - 140px );
+    display: block;
+}
+
+
+#art-3{
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    transition-duration:0.5s;
+    right: calc(25% - 145px );
+}
+#art-3:hover ~ #hidden-div-3,
+#art-3:active ~ #hidden-div-3{
+    right: calc(25% - 140px );
+    display: block;
+}
+
+
+#art-4{
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    transition-duration:0.5s;
+    right:-145px;
+}
+#art-4:hover ~ #hidden-div-4,
+#art-4:active ~ #hidden-div-4{
+    right:-150px;
+    display: block;
+}
+#art-5{
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+  transition-duration:0.5s;
+  right:calc(-145px + -25%);
+}
+#art-5:hover ~ #hidden-div-5,
+#art-5:active ~ #hidden-div-5{
+  right: calc(-140px + -25%);
+  display: block;
+}
+.articles{
+ height: 55%;
+}
+.hidden-div{
+    display: none; 
+    position: absolute;
+    z-index: 3;
+    height: 100px;
+    width: 200px;
+    background:linear-gradient(#a27444, #c4a470);
+    top: 360px;
+}
+.hidden-div p {
+    color: #000000cb;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight:500;
+    font-style:italic;
+    margin-bottom: 10px;
+
+}
+.hidden-div h3{
+    color: #000000cb;
+    font-family: "Raleway", sans-serif;
+    font-weight:200;
+    margin-top: 0px;
+    margin-left:5px;
+}
+.ghost {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    z-index: 2;
+  }
+  #ghost-sun{
+    background-image: url('impression-soleil-levant-monet.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 725px;
+    left: 0;
+  }
+  #ghost-snor{
+    background-image: url('nuit-étoilée-rhone.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    top: 1200px;
+    left: 0;
+    height: calc(200% + 400px);
+  }
+  #ghost-snor #paragraph-2 {
+    background-color: #0000003e;
+  }
+  #van-gogh{
+    position: sticky;
+    left: 60%;
+  }
+  #ghost-moon{
+    background-image: url('fire-full-moon.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    top: 2400px;
+    left: 0;
+  }
+ .title-2 {
+    position: absolute;
+    top: 20px;
+    left:20px;
+    color: #ffffff;
+    padding: 20px;
+    padding-top: 0;
+    margin: 0;
+    width: fit-content;
+    border-radius: 25px;
+  }
+  #global{
+    font-family: Earth;
+    font-size: 40px;
+  }
+  #mirror{
+    font-family: Mirror !important;
+  }
+  #paragraph-2{
+    position: absolute;
+    top: 160px;
+    left:20px;
+    font-family: "Patrick Hand SC", cursive;
+    margin:0;
+    color: #ffffff;
+    width: fit-content;
+    border-radius: 25px;
+    padding: 20px;
+    z-index: 1;
+  }
+  #paragraph-3{
+    position: absolute;
+    top: 450px;
+    left:250px;
+    font-family: "Patrick Hand SC", cursive;
+    margin:0;
+    color: #ffffff;
+    width: 45%;
+    border-radius: 25px;
+    background-color: #0000003e;
+    padding: 20px;
+    z-index: 1;
+  }
+  #fixed{
+    position: sticky;
+    top: 0px;
+    height:70%;
+    width: 80%;
+  }
+
+.box-invert{
+    position:absolute;
+    width: 100%;
+    height: 45%;
+    background-image: url('fire-full-moon-invert.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    top: 436.5px;
+}
+.button-contact {
+  position: relative;
+  top: 225px;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 120%;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 25%;
+  will-change: transform;
+  }
+
+  .button-contact:disabled {
+  pointer-events: none;
+  }
+
+  .button-contact:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+  }
+
+  .button-contact:active {
+  box-shadow: none;
+  transform: translateY(0);
+  }

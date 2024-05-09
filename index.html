@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Art Code</title>
+  </head>
+
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="custom.js"></script>
+
+    <div class="landscape-message">
+      <img
+        src="https://assets-v2.lottiefiles.com/a/685770f2-1168-11ee-8e72-c72882ce9865/CQuMaUaImx.gif"
+        alt="GIF de rotation"
+      />
+      <p>
+        Veuillez mettre votre téléphone en mode paysage pour une meilleure
+        expérience d'utilisation de notre site.
+      </p>
+      <p id="why">Qu'est ce que tu fais encore ici ?</p>
+      <p id="go">Tu peux PARTIR !</p>
+    </div>
+    <div class="tablet-message">
+      <img
+        src="https://i.giphy.com/l3vR85PnGsBwu1PFK.gif"
+        alt="GIF de tablette"
+      />
+      <p>
+        Nous vous recommandons d'utiliser notre site sur un téléphone ou un
+        ordinateur pour une meilleure expérience d'utilisation.
+      </p>
+    </div>
+
+    <header>
+      <h1>Art Code</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="artcontemporain.html">Art-icle</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="room">
+      <img class="painting" src="the-scream.webp" id="art-1" tabindex="0" />
+      <img
+        class="painting"
+        src="nuit-étoilée-rhone.jpg"
+        id="art-2"
+        tabindex="0"
+      />
+      <img
+        class="painting"
+        src="Salvador-Dali-Persistence-of-Memory.webp"
+        id="art-3"
+        tabindex="0"
+      />
+      <img class="painting" src="the-grey-tree.webp" id="art-4" tabindex="0" />
+      <img
+        class="painting"
+        src="the-great-wave-off-kanagawa-painting-japanese-waves-wallpaper-preview.jpg"
+        id="art-5"
+        tabindex="0"
+      />
+
+      <div class="hidden-div" id="hidden-div-1">
+        <p>The Scream</p>
+        <p></p>
+        <h3>Author: Edvard Munch</h3>
+      </div>
+      <div class="hidden-div" id="hidden-div-2">
+        <p>La Nuit Étoilée sur Le Rhône</p>
+        <h3>Author: Van Gogh</h3>
+      </div>
+
+      <div class="hidden-div" id="hidden-div-3">
+        <p>The Persistence of Memory</p>
+        <p></p>
+        <h3>Author: Salvador Dalí</h3>
+      </div>
+
+      <div class="hidden-div" id="hidden-div-4">
+        <p>Arbre Argenté</p>
+        <p></p>
+        <h3>Author: Piet Mondrian</h3>
+      </div>
+      <div class="hidden-div" id="hidden-div-5">
+        <p>The Great Wave off kanagawa</p>
+        <h3>Author: Hokusai</h3>
+      </div>
+    </div>
+    <div id="ghost-sun" class="ghost"></div>
+    <div id="ghost-snor" class="ghost">
+      <div class="articles">
+        <div id="fixed">
+          <h1 class="title-2">L'impressionnisme</h1>
+          <p id="paragraph-2">
+            est un mouvement artistique du 19e siècle mettant l'accent sur la
+            lumière et la couleur. "La Nuit Étoilée sur le Rhône" (en arrière
+            plan) de Van Gogh montre des couleurs vibrantes et des coups de
+            pinceau expressifs, typiques de cette période, capturant
+            l'atmosphère émotionnelle plutôt que la précision réaliste.
+          </p>
+          <p id="paragraph-3">
+            Vincent van Gogh était un peintre néerlandais célèbre pour ses
+            œuvres émotionnelles et spirituelles. Bien qu'il n'ait vendu qu'une
+            seule peinture de son vivant, il est aujourd'hui l'un des artistes
+            les plus célèbres, connu pour son utilisation audacieuse de la
+            couleur et son style de pinceau distinctif.
+          </p>
+        </div>
+        <img id="van-gogh" src="van-gogh.gif" />
+      </div>
+    </div>
+    <div id="ghost-moon" class="ghost">
+      <div class="articles">
+        <div id="fixed">
+          <h1 class="title-2">Art Conptemporain</h1>
+          <p id="paragraph-2">
+            L'art contemporain par les artistes d'aujourd'hui, qui évoluent dans
+            un monde <span id="global">global</span> et
+            <span id="mirror">MULTIFACETTES.</span>
+          </p>
+        </div>
+
+        <div class="box-invert"></div>
+      </div>
+    </div>
+    <script>
+      //scrolll change div
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          var scrollTop = $(document).scrollTop();
+          if (scrollTop > 0) {
+            $("#ghost-sun").fadeIn("slow");
+          } else {
+            $("#ghost-sun").fadeOut("slow");
+          }
+          if (scrollTop > 1200) {
+            $("#ghost-snor").fadeIn("slow");
+          } else {
+            $("#ghost-snor").fadeOut("slow");
+          }
+          if (scrollTop > 2100) {
+            $("#ghost-moon").fadeIn("slow");
+          } else {
+            $("#ghost-moon").fadeOut("slow");
+          }
+          //scroll change page
+          $(document).ready(function () {
+            var $window = $(window);
+
+            $window.on("scroll", function () {
+              if ($window.scrollTop() >= 2390) {
+                window.location.href = "artcontemporain.html#art-article";
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
