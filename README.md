@@ -1,4 +1,4 @@
-# Art Code
+# Art Cod
 
 Bienvenue sur Art Code, un site web artistique créé dans le cadre du projet final de formation chez B-Tech.
 
