@@ -1,31 +1,31 @@
-# Art Cod
+# Art Code
 
-Bienvenue sur Art Code, un site web artistique créé dans le cadre du projet final de formation chez B-Tech.
+Welcome to Art Code, an artistic website created as the final project during training at B-Tech.
 
 ## Description
 
-Art Code est un site web conçu pour présenter une sélection d'œuvres d'art célèbres, accompagnées d'informations sur les artistes et les mouvements artistiques.
+Art Code is a website designed to showcase a selection of famous artworks along with information about the artists and artistic movements.
 
-## Fonctionnalités
+## Features
 
-- Affichage de plusieurs peintures célèbres avec des détails sur chaque œuvre.
-- Informations sur les artistes et les mouvements artistiques.
-- Effets visuels dynamiques pour améliorer l'expérience utilisateur.
+- Display of several famous paintings with details about each artwork.
+- Information about the artists and artistic movements.
+- Dynamic visual effects to enhance the user experience.
 
-## Technologie utilisée
+## Technology Used
 
 - HTML5
 - CSS3
 - JavaScript (jQuery)
 
-## Accès au site
+## Accessing the Website
 
-Le site est hébergé et accessible en ligne. Vous pouvez y accéder en suivant ce lien : [Art Code](https://ekketsu.github.io/art-code.github.io/)
+The site is hosted and accessible online. You can access it by following this link: [Art Code](https://ekketsu.github.io/art-code.github.io/)
 
-## Améliorations futures
+## Future Enhancements
 
-Ce projet est un travail en cours. Voici quelques améliorations prévues pour l'avenir :
+This project is a work in progress. Here are some planned improvements for the future:
 
-- Amélioration de la mise en page et du design.
-- Ajout de fonctionnalités interactives supplémentaires.
-- Optimisation pour une meilleure performance.
+- Improving layout and design.
+- Adding additional interactive features.
+- Optimization for better performance.
